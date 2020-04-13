@@ -10,5 +10,61 @@
     <string name="bem">Badan Eksekutif Mahasiswa</string>
     <string name="upgris">Universitas PGRI Semarang</string>
     <string name="mulai">Mulai</string>
+    <string name="profil">Profil</string>
+    <string name="upgriss">UPGRIS</string>
+    <string name="content">Universitas PGRI Semarang didirikan oleh Pengurus Daerah Tingkat I PGRI Provinsi Jawa Tengah melalui Yayasan Pembina Lembaga Pendidikan (YPLP) IKIP PGRI Jawa Tengah dan merupakan perubahan bentuk dari IKIP PGRI Semarang dengan Akademi Teknologi Semarang. Tujuan pendiriannya adalah untuk menyiapkan calon pemimipin yang unggul dan berkarakter kebangsaan sehingga dapat menjadi teladan dalam kehidupan berbangsa dan bernegara dalam mencapai kesejahteraan seluruh masyarakat Indonesia.</string>
+    <string name="visi">Visi</string>
+    <string name="content_visi">Menjadi Universitas yang Unggul dan Berjatidiri.</string>
+    <string name="misi">Misi</string>
+    <string name="content_misi">Menyelenggarakan Catur Dharma (Pendidikan, Penelitian, Pengabdian kepada Masyarakat, dan Peneladanan) untuk membentuk insan cendekia serta pemimpin yang unggul dan berkarakter Kebangsaan bagi kemaslahatan hidup dan kehidupan.</string>
+    <string name="alamat">Alamat</string>
+    <string name="content_alamat">Jalan Sidodadi Timur Nomor 24 - Dr. Cipto, Karangtempel, Semarang Timur, Karangtempel, Kec. Semarang Tim., Kota Semarang, Jawa Tengah 50232</string>
+    <string name="daftar">Website</string>
+    <string name="pmb">upgris.ac.id</string>
+    <string name="pm">GO</string>
+    <string name="log">Login</string>
+
+    <style name="TextContent" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="TextContent.Small">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="TextContent.Small.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextContent.Subtitle">
+        <item name="android:textColor">@color/colorSubTitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextContent.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextSpec">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSpec.Field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@color/colorSubTitle</item>
+    </style>
+
+    <style name="TextSpec.Value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 
 </resources>
