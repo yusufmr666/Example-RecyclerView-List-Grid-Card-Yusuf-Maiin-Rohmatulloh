@@ -12,9 +12,15 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import dataadapter.Bem;
+import dataadapter.BemData;
+import dataadapter.CardViewAdapter;
+import dataadapter.GridAdapter;
+import dataadapter.ListAdapter;
+
 public class ListActivity extends AppCompatActivity {
 
-    private RecyclerView rvHeroes;
+    private RecyclerView rvBem;
     private ArrayList<Bem> list = new ArrayList<>();
     private void setActionBarTitle(String title) {
         if (getSupportActionBar() != null) {
@@ -29,22 +35,22 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         setActionBarTitle(title);
 
-        rvHeroes = findViewById(R.id.rv_heroes);
-        rvHeroes.setHasFixedSize(true);
+        rvBem = findViewById(R.id.rv_Bem);
+        rvBem.setHasFixedSize(true);
 
         list.addAll(BemData.getListData());
         showRecyclerList();
     }
 
     private void showRecyclerList(){
-        rvHeroes.setLayoutManager(new LinearLayoutManager(this));
+        rvBem.setLayoutManager(new LinearLayoutManager(this));
         ListAdapter listAdapter = new ListAdapter(list);
-        rvHeroes.setAdapter(listAdapter);
+        rvBem.setAdapter(listAdapter);
 
         listAdapter.setOnItemClickCallback(new ListAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Bem data) {
-                showSelectedHero(data);
+                showSelectedBem(data);
             }
         });
     }
@@ -75,23 +81,23 @@ public class ListActivity extends AppCompatActivity {
         setActionBarTitle(title);
     }
     private void showRecyclerGrid(){
-        rvHeroes.setLayoutManager(new GridLayoutManager(this, 2));
+        rvBem.setLayoutManager(new GridLayoutManager(this, 2));
         GridAdapter gridAdapter = new GridAdapter(list);
-        rvHeroes.setAdapter(gridAdapter);
+        rvBem.setAdapter(gridAdapter);
         gridAdapter.setOnItemClickCallback(new GridAdapter.OnItemClickCallback() {
             @Override
             public void onItemClicked(Bem data) {
-                showSelectedHero(data);
+                showSelectedBem(data);
             }
         });
     }
 
     private void showRecyclerCardView(){
-        rvHeroes.setLayoutManager(new LinearLayoutManager(this));
+        rvBem.setLayoutManager(new LinearLayoutManager(this));
         CardViewAdapter cardViewAdapter = new CardViewAdapter(list);
-        rvHeroes.setAdapter(cardViewAdapter);
+        rvBem.setAdapter(cardViewAdapter);
     }
-    private void showSelectedHero(Bem bem) {
+    private void showSelectedBem(Bem bem) {
         Toast.makeText(this, "Kamu memilih " + bem.getName(), Toast.LENGTH_SHORT).show();
     }
 
